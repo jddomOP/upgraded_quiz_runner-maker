@@ -11,7 +11,7 @@ class quiz_storage:
             file.write(quiz_data.to_file_string())
 
     def load_all_questions(self):
-        if not os.path.exists(self, filename):
+        if not os.path.exists(self.filename):
             return []
 
         with open(self.filename, 'r', encoding = 'utf-8') as file:
