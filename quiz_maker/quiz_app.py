@@ -6,7 +6,7 @@ from quiz_questions import Quizquestion
 
 class Quizrunner:
     def __init__(self):
-        self.storage = quiz_storage()
+        self.storage = Quizstorage()
 
     def display_title(self):
         print(pyfiglet.figlet_format("Welcome to the Quiz Maker!", font = 'slant'))
