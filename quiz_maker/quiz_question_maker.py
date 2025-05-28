@@ -14,5 +14,7 @@ class quiz_questions:
             formatted += f"{key}. {self.choices[key]}\n"
         formatted += f"Answer: {self.correct}\n"
         return formatted
-    
+
+    def to_file_string(self):
+        return str(self) + ("-"*40 + "\n")
 
