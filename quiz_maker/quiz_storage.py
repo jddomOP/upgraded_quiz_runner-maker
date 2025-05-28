@@ -2,7 +2,7 @@
 
 import os
 
-class quiz_storage:
+class Quizstorage:
     def __init__(self, filename = 'quiz_questions_and_answers'):
         self.filename = filename
 
