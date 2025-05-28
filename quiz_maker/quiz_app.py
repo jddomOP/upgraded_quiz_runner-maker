@@ -11,5 +11,16 @@ class quiz_runner:
     def display_title(self):
         print(pyfiglet.figlet_format("Welcome to the Quiz Maker!", font = 'slant'))
 
+    def main_menu(self):
+        while True:
+            self.display_title()
+            print("Main Menu")
+            print("1. Create a Quiz")
+            print("2. View Questions")
+            print("3. Delete questions")
+            print("4. Exit")
+            choice = input("Choose an option! (1,2,3,4): ")
+
+            
 
 
