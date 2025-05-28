@@ -4,7 +4,7 @@ import pyfiglet
 from quiz_storage import quiz_storage
 from quiz_questions import quiz_question
 
-class quiz_runner:
+class Quizrunner:
     def __init__(self):
         self.storage = quiz_storage()
 
