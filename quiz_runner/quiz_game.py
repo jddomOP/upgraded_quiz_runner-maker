@@ -28,7 +28,7 @@ class Quizgame:
 
             self.check_answer(answer, q)
 
-            print(Fore.MAGENTA + f"\n Quiz Finished!! Your Score: {self.score}/{len(self.questions)}")
+        print(Fore.MAGENTA + f"\n Quiz Finished!! Your Score: {self.score}/{len(self.questions)}")
 
     def check_answer(self, answer, question):
         correct = question['correct']
