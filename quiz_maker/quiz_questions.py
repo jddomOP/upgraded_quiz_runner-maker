@@ -10,7 +10,7 @@ class Quizquestion:
     def __str__(self):
         formatted = f"Q: {self.questions}\n"
         formatted += f"Difficulty: {self.difficulty}\n"
-        for key in ["a, b, c, d"]:
+        for key in ['a', 'b', 'c', 'd']:
             formatted += f"{key}. {self.choices[key]}\n"
         formatted += f"Answer: {self.correct}\n"
         return formatted
