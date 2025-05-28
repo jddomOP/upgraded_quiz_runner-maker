@@ -32,6 +32,10 @@ class quiz_runner:
                 break
             else:
                 print("Invalid input! Please try again :)")
-                
+
+    def create_quiz(self):
+        difficulty = input("Enter the difficulty (Elementary, High School, General): ").capitalize()
+        print(f"Creating {difficulty} quiz.")
+
 
 
