@@ -60,5 +60,15 @@ class quiz_runner:
             self.storage.save_question(quiz_data)
             print("Question is saved!!\n")
 
+    def view_questions(self):
+        questions = self.storage.load_all_questions()
+        if not questions:
+            print("No questions saved yet.")
+            return
+
+        print("\n=== SAVED QUIZ QUESTIONS ===")
+        for q in questions:
+            print(q + "\n" + "-" * 40)
+
 
 
