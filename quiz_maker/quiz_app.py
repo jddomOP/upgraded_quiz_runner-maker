@@ -70,5 +70,20 @@ class quiz_runner:
         for q in questions:
             print(q + "\n" + "-" * 40)
 
+    def delete_question(self):
+        questions = self.storage.load_all_questions()
+        if not questions:
+            print("No questions to delete.")
+            return
+
+        print("\n=== Questions ===")
+        for i, q in enumerate(questions, start=1):
+            print(f"{i}. {q.splitlines()[0]}")
+
+        user_input = input("Enter the number of the question to delete (or 'cancel'): ")
+        if user_input.lower() == 'cancel':
+            print("Deletion cancelled.")
+            return
+
 
 
