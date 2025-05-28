@@ -28,3 +28,8 @@ def load_questions_by_difficulty(difficulty):
             "d": lines[5][4:],
             "correct": lines[6][8:].lower()
         }
+
+        if question_data['difficulty'] == difficulty.lower():
+            question.append(question_data)
+
+        return question
