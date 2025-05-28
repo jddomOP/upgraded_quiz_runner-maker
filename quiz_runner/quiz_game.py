@@ -7,4 +7,14 @@ class Quizgame:
         self.difficulty = difficulty
         self.questions = questions
         self.time_limit = time_limit
-        
+
+    def start(self):
+        random.shuffle(self.questions)
+
+        for i, q in enumerate(self.questions, 1):
+            print(Fore.YELLOW + f"\n Question {i}: {q['question']}")
+            print(f"a.) {q['a']}")
+            print(f"b.) {q['b']}")
+            print(f"c.) {q['c']}")
+            print(f"d.) {q['d']}")
+            print(Fore.BLUE + f"⏳ You have {self.time_limit} seconds to answer!!")
