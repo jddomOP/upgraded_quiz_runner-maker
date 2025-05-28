@@ -14,3 +14,9 @@ def choose_difficulty():
         if choice not in difficulty_map:
             print(Fore.RED + "❌ Invalid choice. Please choose between 1, 2, 3")
             continue
+
+        difficulty = difficulty_map[choice]
+        question = load_questions_by_difficulty(difficulty)
+
+        if question:
+            return difficulty,question
