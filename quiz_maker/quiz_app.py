@@ -44,9 +44,9 @@ class quiz_runner:
                 break
 
             choices = {
-                'a':input("Choice a: ")
-                'b':input("Choice b: ")
-                'c':input("Choice c: ")
+                'a':input("Choice a: "),
+                'b':input("Choice b: "),
+                'c':input("Choice c: "),
                 'd':input("Choice d: ")
             }
 
