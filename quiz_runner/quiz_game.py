@@ -7,6 +7,7 @@ class Quizgame:
         self.difficulty = difficulty
         self.questions = questions
         self.time_limit = time_limit
+        self.score = 0
 
     def start(self):
         random.shuffle(self.questions)
