@@ -19,4 +19,6 @@ def choose_difficulty():
         question = load_questions_by_difficulty(difficulty)
 
         if question:
-            return difficulty,question
+            return difficulty,question\
+        else:
+            print print(Fore.RED + f"No questions found for '{difficulty}'. Please pick another difficulty.\n")
