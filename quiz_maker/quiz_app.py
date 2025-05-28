@@ -50,3 +50,10 @@ class quiz_runner:
                 'd':input("Choice d: ")
             }
 
+            correct = ""
+            while correct.lower() not in ['a', 'b', 'c', 'd']:
+                correct = input("Enter the correct answer (a/b/c/d): ").lower()
+                if correct not in choices:
+                    print("Invalid input! Please choose from a, b, c, d 😊")
+
+
