@@ -21,6 +21,17 @@ class quiz_runner:
             print("4. Exit")
             choice = input("Choose an option! (1,2,3,4): ")
 
-            
+            if choice == '1':
+                self.create_quiz()
+            elif choice == '2':
+                self.view_questions()
+            elif choice == '3':
+                self.delete_questions()
+            elif choice == '4':
+                print("Thanks for using!!")
+                break
+            else:
+                print("Invalid input! Please try again :)")
+                
 
 
