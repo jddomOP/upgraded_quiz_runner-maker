@@ -56,4 +56,9 @@ class quiz_runner:
                 if correct not in choices:
                     print("Invalid input! Please choose from a, b, c, d 😊")
 
+            quiz_questions = quiz_questions(question, difficulty, choices, correct)
+            self.storage.save_question(quiz_data)
+            print("Question is saved!!\n")
+
+
 
