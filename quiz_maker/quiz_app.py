@@ -56,7 +56,7 @@ class Quizrunner:
                 if correct not in choices:
                     print("Invalid input! Please choose from a, b, c, d 😊")
 
-            quiz_questions = quiz_question(question, difficulty, choices, correct)
+            quiz_questions = Quizquestion(question, difficulty, choices, correct)
             self.storage.save_question(quiz_questions)
             print("Question is saved!!\n")
 
