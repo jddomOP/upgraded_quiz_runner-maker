@@ -18,3 +18,13 @@ class quiz_storage:
             raw = file.read
             blocks = raw.strip().split("-"*40 + "\n")
             return [block.strip() for block in blocks if block.strip()]
+
+    def delete_question(self, index):
+        questions = self.load_all_questions()
+        if 0 <= index <= len(questions):
+            del questions[index]
+            with open (self.filename, 'w' encoding = 'utf-8') as file:
+                for q in questions:
+                    file.write(q + "\n" + "-"*40 + "\n")
+            return True
+        return False
