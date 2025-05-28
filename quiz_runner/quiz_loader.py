@@ -13,3 +13,8 @@ def load_questions_by_difficulty(difficulty):
 
     question_blocks = content.split("-"*40 + "\n")
     question = []
+
+    for block in question_blocks:
+        lines = block.strip().split('\n')
+        if len(lines) < 7:
+            continue
