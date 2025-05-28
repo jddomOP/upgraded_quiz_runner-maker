@@ -26,7 +26,7 @@ class Quizrunner:
             elif choice == '2':
                 self.view_questions()
             elif choice == '3':
-                self.delete_questions()
+                self.delete_question()
             elif choice == '4':
                 print("Thanks for using!!")
                 break
