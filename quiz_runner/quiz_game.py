@@ -1,5 +1,5 @@
 import random
-from inputtimeout import Inputimeout, TimeoutOccured
+from inputimeout import inputimeout, TimeoutOccurred
 from colorama import Fore
 
 class Quizgame:
