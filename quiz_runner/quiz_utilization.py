@@ -10,3 +10,7 @@ def choose_difficulty():
         print("2. High School")
         print("3. General")
         choice = input(Fore.CYAN + "Enter 1/2/3: ")
+
+        if choice not in difficulty_map:
+            print(Fore.RED + "❌ Invalid choice. Please choose between 1, 2, 3")
+            continue
