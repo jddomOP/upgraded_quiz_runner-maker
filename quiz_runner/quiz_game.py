@@ -28,3 +28,13 @@ class Quizgame:
             self.check_answer(answer, q)
 
             print(Fore.MAGENTA + f"\n Quiz Finished!! Your Score: {self.score}/{len(self.questions)}")
+
+    def check_answer(self, answer, question):
+        correct = question['correct']
+        if answer in ['a', 'b', 'c', 'd'] and answer == correct:
+            print(Fore.GREEN + "✅ Correct!!")
+            self.score += 1
+        elif answer:
+            print(Fore.RED + f"❌ Wrong! The correct answer was '{correct} {question[correct]}'")
+        else:
+            print(Fore.RED + f"❌ No answer?!?! The correct answer was '{correct} {question[correct]}'")
