@@ -18,3 +18,13 @@ class Quizgame:
             print(f"c.) {q['c']}")
             print(f"d.) {q['d']}")
             print(Fore.BLUE + f"⏳ You have {self.time_limit} seconds to answer!!")
+
+            try:
+                answer = inputimeout(prompt=Fore.CYAN + "Your answer (a/b/c/d): ", timeout=self.time_limit).lower()
+            except TimeoutOccurred:
+                answer = None
+                print(Fore.RED + "⌛ Time is up!")
+
+            self.check_answer(answer, q)
+
+            print(Fore.MAGENTA + f"\n Quiz Finished!! Your Score: {self.score}/{len(self.questions)}")
