@@ -14,7 +14,7 @@ class quiz_storage:
         if not os.path.exists(self, filename):
             return []
 
-        with open(self, filename. 'r', encodinf = 'utf-8') as file:
+        with open(self.filename, 'r', encoding = 'utf-8') as file:
             raw = file.read
             blocks = raw.strip().split("-"*40 + "\n")
             return [block.strip() for block in blocks if block.strip()]
