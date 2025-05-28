@@ -23,7 +23,7 @@ class quiz_storage:
         questions = self.load_all_questions()
         if 0 <= index <= len(questions):
             del questions[index]
-            with open (self.filename, 'w' encoding = 'utf-8') as file:
+            with open (self.filename, 'w', encoding = 'utf-8') as file:
                 for q in questions:
                     file.write(q + "\n" + "-"*40 + "\n")
             return True
