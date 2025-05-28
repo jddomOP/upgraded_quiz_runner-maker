@@ -37,5 +37,11 @@ class quiz_runner:
         difficulty = input("Enter the difficulty (Elementary, High School, General): ").capitalize()
         print(f"Creating {difficulty} quiz.")
 
+        while True:
+            question = input("Enter your desired question (or type 'exit' to go back to main menu): ")
+            if question.lower() == "exit":
+                print("Returning to Main Menu...\n")
+                break
+
 
 
