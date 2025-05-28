@@ -85,5 +85,15 @@ class quiz_runner:
             print("Deletion cancelled.")
             return
 
+        try:
+            index = int(user_input) - 1
+            if self.storage.delete_question(index):
+                print("Question deleted successfully.")
+            else:
+                print("Invalid index.")
+        except ValueError:
+            print("Invalid input. Must be a number or 'cancel'.")
+
+
 
 
