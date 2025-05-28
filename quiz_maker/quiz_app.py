@@ -43,5 +43,10 @@ class quiz_runner:
                 print("Returning to Main Menu...\n")
                 break
 
-
+            choices = {
+                'a':input("Choice a: ")
+                'b':input("Choice b: ")
+                'c':input("Choice c: ")
+                'd':input("Choice d: ")
+            }
 
