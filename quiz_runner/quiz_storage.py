@@ -33,3 +33,5 @@ class QuizStorage:
 
             if question_data['difficulty'] == difficulty.lower():
                 questions.append(question_data)
+
+        return questions
