@@ -31,6 +31,7 @@ class QuizStorage:
                 "correct": lines[6][8:].lower()
             }
 
+
             if question_data['difficulty'] == difficulty.lower():
                 questions.append(question_data)
 

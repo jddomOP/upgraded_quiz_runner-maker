@@ -2,7 +2,7 @@ import random
 import pyfiglet
 from inputimeout import inputimeout, TimeoutOccurred
 from colorama import init, Fore, Style
-from quiz_storage import QuizStorage
+from quiz_storage import QuizStorage  
 
 init(autoreset=True)
 
@@ -74,5 +74,3 @@ class QuizGame:
 
         if self.choose_difficulty():
             self.ask_questions()
-
-
