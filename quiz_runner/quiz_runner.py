@@ -61,10 +61,10 @@ class QuizRunner:
 
             if answer in ['a', 'b', 'c', 'd'] and answer == q['correct']:
                 print(Fore.GREEN + "You are Correct!!")
-                    score += 1
+                score += 1
             elif answer:
                 print(Fore.RED + f"❌ Wrong! The correct answer was '{q['correct']} {q[q['correct']]}'")
-                else:
+            else:
                 print(Fore.RED + f"❌ No answer?!?! The correct answer was '{q['correct']} {q[q['correct']]}'")
 
         print(Fore.LIGHTGREEN_EX + f"\n Quiz Finished!! Your score: {score}{len(self.questions)}")
