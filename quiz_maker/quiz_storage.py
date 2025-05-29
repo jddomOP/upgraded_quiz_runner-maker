@@ -7,7 +7,7 @@ class Quizstorage:
         self.filename = filename
 
     def save_question(self, quiz_data):
-        with open(self.filename, 'a', encoding='utf-8') as file:
+        with open(self.filename, 'a', encoding= 'utf-8') as file:
             file.write(quiz_data.to_file_string())
 
     def load_all_questions(self):
