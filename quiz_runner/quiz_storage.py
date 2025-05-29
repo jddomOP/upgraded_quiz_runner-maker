@@ -22,7 +22,7 @@ class QuizStorage:
                 continue
 
             question_data = {
-                "question": lines[0][3:],
+                "question": lines[0][2:],
                 "difficulty": lines[1][11:].strip().lower(),
                 "a": lines[2][3:],
                 "b": lines[3][3:],
