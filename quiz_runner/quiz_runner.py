@@ -29,3 +29,7 @@ class QuizRunner:
 
             self.difficulty = difficulty_map[choice]
             loaded = self.storage.load_questions_by_difficulty(self.difficulty)
+
+            if loaded is None:
+                print(Fore.RED + "QUIZ FILE NOT FOUND :(")
+                return  False
