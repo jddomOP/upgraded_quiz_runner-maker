@@ -56,7 +56,7 @@ class QuizGame:
                 answer = inputimeout(prompt=Fore.CYAN + "Your answer (a/b/c/d): ", timeout=self.time_limit).lower()
             except TimeoutOccurred:
                 answer = None
-                print(Fore.RED + "Your time is up!")
+                print(Fore.RED + "⌛ Your time is up!")
 
             if answer in ['a', 'b', 'c', 'd'] and answer == q['correct']:
                 print(Fore.GREEN + "You are Correct!!")
