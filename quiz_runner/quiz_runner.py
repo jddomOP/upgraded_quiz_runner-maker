@@ -69,5 +69,11 @@ class QuizRunner:
 
         print(Fore.LIGHTGREEN_EX + f"\n Quiz Finished!! Your score: {score}{len(self.questions)}")
 
-    def
+    def start(self):
+        print(Style.BRIGHT + Fore.LIGHTCYAN_EX + pyfiglet.figlet_format("Welcome to my Quiz!!", font="slant")
+              + Style.RESET_ALL)
+
+        if self.choose_difficulty():
+            self.ask_questions()
+
 
