@@ -53,8 +53,7 @@ class QuizGame:
             print(Fore.BLUE + f"⏳ You have {self.time_limit} seconds to answer!!")
 
             try:
-                answer = inputimeout(prompt=Fore.CYAN + "Your answer (a/b/c/d): ",
-                                         timeout=self.time_limit).lower()
+                answer = inputimeout(prompt=Fore.CYAN + "Your answer (a/b/c/d): ", timeout=self.time_limit).lower()
             except TimeoutOccurred:
                 answer = None
                 print(Fore.RED + "Your time is up!")
