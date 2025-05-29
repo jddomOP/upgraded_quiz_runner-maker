@@ -33,3 +33,10 @@ class QuizRunner:
             if loaded is None:
                 print(Fore.RED + "QUIZ FILE NOT FOUND :(")
                 return  False
+
+            if loaded:
+                self.questions = loaded
+                return True
+            else:
+                print(Fore.RED + f"No Questions found for '{self.difficulty}. Please pick another difficulty.\n")
+            
