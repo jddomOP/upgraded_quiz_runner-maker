@@ -45,7 +45,7 @@ class QuizGame:
         random.shuffle(self.questions)
 
         for i, q in enumerate(self.questions, 1):
-            print(Fore.LIGHTYELLOW_EX + f"\m Questions {i}: {q['question']}")
+            print(Fore.LIGHTYELLOW_EX + f"\n Questions {i}: {q['question']}")
             print(f"a.) {q['a']}")
             print(f"b.) {q['b']}")
             print(f"c.) {q['c']}")
