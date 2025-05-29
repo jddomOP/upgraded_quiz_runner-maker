@@ -41,4 +41,7 @@ class QuizRunner:
                 print(Fore.RED + f"No Questions found for '{self.difficulty}. Please pick another difficulty.\n")
 
         def ask_questions(self):
+            score = 0
+            random.shuffle(self.questions)
             
+
