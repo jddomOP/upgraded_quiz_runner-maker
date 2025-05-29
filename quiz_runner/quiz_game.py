@@ -46,10 +46,10 @@ class QuizGame:
 
         for i, q in enumerate(self.questions, 1):
             print(Fore.LIGHTYELLOW_EX + f"\n Questions {i}: {q['question']}")
-            print(f"a.) {q['a']}")
-            print(f"b.) {q['b']}")
-            print(f"c.) {q['c']}")
-            print(f"d.) {q['d']}")
+            print(f"a. {q['a']}")
+            print(f"b. {q['b']}")
+            print(f"c. {q['c']}")
+            print(f"d. {q['d']}")
             print(Fore.BLUE + f"⏳ You have {self.time_limit} seconds to answer!!")
 
             try:
