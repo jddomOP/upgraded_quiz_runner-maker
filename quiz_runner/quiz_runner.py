@@ -40,33 +40,34 @@ class QuizRunner:
             else:
                 print(Fore.RED + f"No Questions found for '{self.difficulty}. Please pick another difficulty.\n")
 
-        def ask_questions(self):
-            score = 0
-            random.shuffle(self.questions)
+    def ask_questions(self):
+        score = 0
+        random.shuffle(self.questions)
 
-            for i, q in enumerate(self.questions, 1):
-                print(Fore.LIGHTYELLOW_EX + f"\m Questions {i}: {q['question']}")
-                print(f"a.) {q['a']}")
-                print(f"b.) {q['b']}")
-                print(f"c.) {q['c']}")
-                print(f"d.) {q['d']}")
-                print(Fore.BLUE +f"You have {self.time_limit} to answer")
+        for i, q in enumerate(self.questions, 1):
+            print(Fore.LIGHTYELLOW_EX + f"\m Questions {i}: {q['question']}")
+            print(f"a.) {q['a']}")
+            print(f"b.) {q['b']}")
+            print(f"c.) {q['c']}")
+            print(f"d.) {q['d']}")
+            print(Fore.BLUE +f"You have {self.time_limit} to answer")
 
-                try:
-                    answer = inputimeout(prompt=Fore.CYAN + "Your answer (a/b/c/d): ",
+            try:
+                answer = inputimeout(prompt=Fore.CYAN + "Your answer (a/b/c/d): ",
                                          timeout=self.time_limit).lower()
-                except TimeoutOccurred:
-                    answer = None
-                    print(Fore.RED + "Your time is up!")
+            except TimeoutOccurred:
+                answer = None
+                print(Fore.RED + "Your time is up!")
 
-                if answer in ['a', 'b', 'c', 'd'] and answer == q['correct']:
-                    print(Fore.GREEN + "You are Correct!!")
+            if answer in ['a', 'b', 'c', 'd'] and answer == q['correct']:
+                print(Fore.GREEN + "You are Correct!!")
                     score += 1
-                elif answer:
-                    print(Fore.RED + f"❌ Wrong! The correct answer was '{q['correct']} {q[q['correct']]}'")
+            elif answer:
+                print(Fore.RED + f"❌ Wrong! The correct answer was '{q['correct']} {q[q['correct']]}'")
                 else:
-                    print(Fore.RED + f"❌ No answer?!?! The correct answer was '{q['correct']} {q[q['correct']]}'")
+                print(Fore.RED + f"❌ No answer?!?! The correct answer was '{q['correct']} {q[q['correct']]}'")
 
-            print(Fore.LIGHTGREEN_EX + f"\n Quiz Finished!! Your score: {score}{len(self.questions)}")
-            
+        print(Fore.LIGHTGREEN_EX + f"\n Quiz Finished!! Your score: {score}{len(self.questions)}")
+
+    def
 
