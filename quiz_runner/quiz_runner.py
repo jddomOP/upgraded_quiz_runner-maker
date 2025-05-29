@@ -26,3 +26,6 @@ class QuizRunner:
             if choice not in difficulty_map:
                 print(Fore.RED + "❌ Invalid choice. Please choose between 1, 2, 3")
                 continue
+
+            self.difficulty = difficulty_map[choice]
+            loaded = self.storage.load_questions_by_difficulty(self.difficulty)
