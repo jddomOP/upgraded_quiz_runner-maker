@@ -9,3 +9,9 @@ class QuizStorage:
     def load_questions_by_difficulty(self, difficulty):
         if not os.path.exists(self.filename):
             return None
+
+        with open(self.filename, 'r', encoding = 'utf-8') as file:
+            content = file.read().strip()
+
+        question_blocks = content.split('-'*40 + '\n')
+        questions = []
