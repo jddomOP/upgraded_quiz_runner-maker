@@ -59,3 +59,7 @@ class QuizRunner:
                     answer = None
                     print(Fore.RED + "Your time is up!")
 
+                if answer in ['a', 'b', 'c', 'd'] and answer == q['correct']:
+                    print(Fore.GREEN + "You are Correct!!")
+                    score += 1
+
