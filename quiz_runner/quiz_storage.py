@@ -15,3 +15,8 @@ class QuizStorage:
 
         question_blocks = content.split('-'*40 + '\n')
         questions = []
+
+        for block in question_blocks:
+            lines = block.strip().split('\n')
+            if len(lines) < 7:
+                continue
