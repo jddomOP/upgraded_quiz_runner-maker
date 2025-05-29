@@ -43,5 +43,12 @@ class QuizRunner:
         def ask_questions(self):
             score = 0
             random.shuffle(self.questions)
-            
+
+            for i, q in enumerate(self.questions, 1):
+                print(Fore.LIGHTYELLOW_EX + f"\m Questions {i}: {q['question']}")
+                print(f"a.) {q['a']}")
+                print(f"b.) {q['b']}")
+                print(f"c.) {q['c']}")
+                print(f"d.) {q['d']}")
+                print(Fore.BLUE +f"You have {self.time_limit} to answer")
 
