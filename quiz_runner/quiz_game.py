@@ -32,7 +32,7 @@ class QuizGame:
 
             if loaded is None:
                 print(Fore.RED + "QUIZ FILE NOT FOUND :(")
-                return  False
+                return False
 
             if loaded:
                 self.questions = loaded
