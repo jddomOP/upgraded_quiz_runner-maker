@@ -50,7 +50,7 @@ class QuizGame:
             print(f"b.) {q['b']}")
             print(f"c.) {q['c']}")
             print(f"d.) {q['d']}")
-            print(Fore.BLUE +f"You have {self.time_limit} to answer")
+            print(Fore.BLUE + f"⏳ You have {self.time_limit} seconds to answer!!")
 
             try:
                 answer = inputimeout(prompt=Fore.CYAN + "Your answer (a/b/c/d): ",
