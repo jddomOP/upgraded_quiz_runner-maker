@@ -66,7 +66,7 @@ class QuizGame:
             else:
                 print(Fore.RED + f"❌ No answer?!?! The correct answer was '{q['correct']}: {q[q['correct']]}'")
 
-        print(Fore.LIGHTGREEN_EX + f"\n Quiz Finished!! Your score: {score}{len(self.questions)}")
+        print(Fore.LIGHTGREEN_EX + f"\n Quiz Finished!! Your Score: {score}/{len(self.questions)}")
 
     def start(self):
         print(Style.BRIGHT + Fore.LIGHTCYAN_EX + pyfiglet.figlet_format("Welcome to my Quiz!!", font="slant")
