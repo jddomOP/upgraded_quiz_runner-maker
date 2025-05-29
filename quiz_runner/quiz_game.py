@@ -38,7 +38,7 @@ class QuizGame:
                 self.questions = loaded
                 return True
             else:
-                print(Fore.RED + f"No Questions found for '{self.difficulty}. Please pick another difficulty.\n")
+                print(Fore.RED + f"No Questions found for '{self.difficulty}'. Please pick another difficulty.\n")
 
     def ask_questions(self):
         score = 0
